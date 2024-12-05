@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "securite",
+    "name": "LIKUNZI",
     "slug": "securite",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,13 +15,35 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.votreentreprise.securite",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "permissions": [
+      "NOTIFICATIONS",
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_FINE_LOCATION",
+      "INTERNET"
+    ],
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "projectId": "@your-username/securite",
+    "extra": {
+      "eas": {
+        "projectId": "598f04dd-a41c-438b-9428-a74239e03877"
+      }
     }
   }
 }
